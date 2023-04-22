@@ -84,9 +84,9 @@ $(document).ready(function(){
 
         let titulo;
         let mensagem;
-
-        switch(texto){
-            case "final": titulo = "13 de Abril de 2023"; mensagem = "<section class='text-center mt-5 mb-5'><p><strong>O dia em que ela disse<br><span class='letra2 letra-vermelha'>SIM</span></strong></p></section>";break;
+        
+        switch(texto){ 
+        case "final": titulo = "13 de Abril de 2023"; mensagem = "<section class='text-center mt-5 mb-5'><p><strong>O dia em que ela disse<br><span class='letra2 letra-vermelha'>SIM</span></strong></p></section>";break;
         }
 
         mostraPopUp(true, titulo, mensagem);
@@ -112,9 +112,9 @@ const mostraPopUp = (mostrar, titulo = "Título de testes", mensagem = "Mensagem
         $(".container").css("opacity", "1");
 
         if(telaFinal){
-            $("#tela19").fadeOut(4000);
+            $("#tela17").fadeOut(4000);
             setTimeout(() => {
-                $("#tela20").fadeIn(6500);
+                $("#tela18").fadeIn(6500);
                 $("body").attr("class", "fundo6");    
                 $("html, body").animate({ scrollTop: 0 }, "slow");
             }, 4000);
